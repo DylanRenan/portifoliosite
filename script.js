@@ -4,10 +4,14 @@ async function loadComponent(id, file) {
     const data = await res.text();
     document.getElementById(id).innerHTML = data;
 
-    initHeader(); // importante!
+    // só roda para o header
+    if (id === "header") {
+        initHeader();
+    }
 }
 loadComponent("header", "header.html");
 loadComponent("footer", "footer.html");
+
 
 // ===== FUNÇÕES DO HEADER =====
 function initHeader() {
@@ -15,6 +19,11 @@ function initHeader() {
     const toggle = document.getElementById("menu-toggle");
     const nav = document.getElementById("nav");
     const header = document.getElementById("main-header");
+
+    if (!toggle || !nav || !header) {
+        console.warn("Header não encontrado ainda");
+        return;
+    }
 
     // menu mobile
     toggle.addEventListener("click", () => {
@@ -28,12 +37,12 @@ function initHeader() {
         });
     });
 
-    // header scroll
+    // scroll
     window.addEventListener("scroll", () => {
         header.classList.toggle("scrolled", window.scrollY > 10);
     });
 
-    // link ativo automático
+    // link ativo
     const currentPage = window.location.pathname.split("/").pop();
 
     document.querySelectorAll(".nav-links a").forEach(link => {

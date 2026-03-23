@@ -4,45 +4,66 @@
     <meta charset="UTF-8">
     <title>Contato</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="contact-page">
 
+    <!-- HEADER DINÂMICO -->
     <div id="header"></div>
 
-    <main>
-        <div class="contact-container">
-            <h2>Fale comigo</h2>
+    <main class="contact-main">
 
-            <!-- FORMULÁRIO FUNCIONAL -->
-            <form action="renandylan@gmail.com" method="POST">
+        <section class="contact-section">
 
-                <!-- Anti-spam -->
-                <input type="hidden" name="_captcha" value="false">
+            <div class="contact-info">
+                <h1>Entre em contato</h1>
+                <p>Se quiser falar sobre projetos, oportunidades ou ideias, me mande uma mensagem.</p>
 
-                <!-- Redirecionamento após envio -->
-                <input type="hidden" name="_next" value="obrigado.html">
+                <div class="contact-details">
+                    <p><strong>Email:</strong> renandylan@gmail.com</p>
+                    <p><strong>LinkedIn:</strong> https://www.linkedin.com/in/dylan-ferreira-dourado/</p>
+                </div>
+            </div>
 
-                <label>Nome</label>
-                <input type="text" name="name" required>
+            <div class="contact-form">
 
-                <label>Email</label>
-                <input type="email" name="email" required>
+                <form action="https://formsubmit.co/renandylan@gmail.com" method="POST">
 
-                <label>Mensagem</label>
-                <textarea name="message" required></textarea>
+                    <!-- Config -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="obrigado.html">
 
-                <button type="submit">Enviar</button>
-            </form>
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" name="name" required>
+                    </div>
 
-        </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Mensagem</label>
+                        <textarea name="message" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar mensagem</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
     </main>
 
+    <!-- FOOTER DINÂMICO -->
     <div id="footer"></div>
 
     <script src="script.js"></script>
 
 </body>
-</html> 
+</html>
