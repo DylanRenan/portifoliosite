@@ -6,9 +6,8 @@ async function loadComponent(id, file) {
 
     initHeader(); // importante!
 }
-
-loadComponent("header", "/header.html");
-loadComponent("footer", "/footer.html");
+loadComponent("header", "header.html");
+loadComponent("footer", "footer.html");
 
 // ===== FUNÇÕES DO HEADER =====
 function initHeader() {
