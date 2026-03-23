@@ -288,3 +288,67 @@ button {
         flex-direction: column;
     }
 }
+
+/* ===== THANK YOU PAGE ===== */
+.thanks-main {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* caixa central */
+.thanks-box {
+    background: #020617;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+}
+
+/* título */
+.thanks-box h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* texto */
+.thanks-box p {
+    color: #94a3b8;
+    margin-bottom: 20px;
+}
+
+/* botão */
+.thanks-box a {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.thanks-box a:hover {
+    background: #0ea5e9;
+}
+
+/* animação leve */
+.thanks-box {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
