@@ -1,23 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Site</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div id="header"></div>
 
     <main>
-        <section id="about">
-            <h2>Portifolio</h2>
-            <p>Welcome to my portfolio site. I am a web developer passionate about creating modern and responsive websites.</p>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <h1>Olá, eu sou <span>Dylan Dourado</span></h1>
+                <p>Desenvolvedor focado em jogos e experiências digitais.</p>
+                <a href="projects.html" class="btn">Ver Projetos</a>
+            </div>
         </section>
-        
-        
+
+        <!-- SOBRE RESUMO -->
+        <section class="about-preview container">
+            <h2>Sobre mim</h2>
+            <p>
+                Desenvolvedor com foco em criação de jogos e sistemas interativos,
+                utilizando ferramentas como Unity e GameMaker.
+            </p>
+            <a href="about.html">Saiba mais →</a>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="projects-preview container">
+            <h2>Projetos em destaque</h2>
+
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto.</p>
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
     <div id="footer"></div>
